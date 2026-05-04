@@ -150,12 +150,12 @@ Half day Schedule:
 
 Authors
 
-- [Bruna Piereck](@[orcid](https://orcid.org/XXXX))
-- [Janick Mathys](@[orcid](https://orcid.org/XXXX))
+- [Bruna Piereck](@[orcid](https://orcid.org/0000-0001-6691-4233))
+- [Janick Mathys](@[orcid](https://orcid.org/0009-0007-1722-2370))
 
 Contributors
 
-- [Boris Depoortere](@[orcid](https://orcid.org/XXXY))
+- [Boris Depoortere](@[orcid](https://orcid.org/0009-0002-2539-116X))
 
 ## Citing this lesson
 
@@ -196,8 +196,8 @@ Material for the HPC training.
     "@type": "CreativeWork",
     "@id": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE"
   },
-  "description": "Introduction to HPC is a hands-on course aiming to introduce you to the best practices and how to use of the Flemish Supercomputer use, at the same time enabling you to easily adapt to any HPC you may need access.",
-  "keywords": "HPC, Data Analysis, OPEN, Bioinformatics",
+  "description": "In this course you will learn about the structure of the HPC (tiers), what resources you have available, and most importantly, how to use and navigate the HPC. We focus on the VSC (Vlaams Supercomputer Centrum) instances and VIB Data Core cluster computer. Most of them use Slurm what could be used similarly in other HPCs. Our goal is to help you easily adapt to any HPC system you encounter in your professional life",
+  "keywords": "HPC, Data Analysis, OPEN, Bioinformatics, Slurm, VSC",
   "name": "Introduction to HPC",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "educationalLevel": "beginner",
