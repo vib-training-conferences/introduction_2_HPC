@@ -197,7 +197,7 @@ Material for the HPC training.
     "@id": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE"
   },
   "description": "In this course you will learn about the structure of the HPC (tiers), what resources you have available, and most importantly, how to use and navigate the HPC. We focus on the VSC (Vlaams Supercomputer Centrum) instances and VIB Data Core cluster computer. Most of them use Slurm what could be used similarly in other HPCs. Our goal is to help you easily adapt to any HPC system you encounter in your professional life",
-  "keywords": "HPC, Data Analysis, OPEN, Bioinformatics, Slurm, VSC",
+  "keywords": "HPC, Data Analysis, OPEN, Bioinformatics, Slurm, Torque, VSC",
   "name": "Introduction to HPC",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "educationalLevel": "beginner",

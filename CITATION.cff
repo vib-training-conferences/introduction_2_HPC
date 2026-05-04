@@ -25,6 +25,7 @@ date-released: 2025-08-10
 keywords:
 - HPC
 - Slurm
+- Torque
 - Data Analysis
 - VSC
 - OPEN
