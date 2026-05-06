@@ -4,8 +4,6 @@
 ## SBATCH --mail-type=end #### NONE, BEGIN, END, FAIL, REQUEUE, ALL
 #SBATCH --partition=donphan
 #SBATCH --mem=4G
-## SBATCH --mail-user=bruna.piereckmoura@vib.be
-## SBATCH --mail-type=end #### NONE, BEGIN, END, FAIL, REQUEUE, ALL
 #SBATCH -e "slurm_%x_%j.error"  ## %x takes job name; %j takes job ID
 #SBATCH -o "slurm_%x_%j.out"
 #SBATCH --time=00:05:00
