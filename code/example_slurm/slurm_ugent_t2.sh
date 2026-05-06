@@ -26,15 +26,15 @@ singularity run hello-world_latest.sif
 sleep 5
 
 # Creating resources report
+echo "=== Report resources usage ==="
+sacct -j $SLURM_JOBID  --format=jobid,partition,elapsed,state,totalcpu,maxrss,averss
 
-Including report in output file
-echo "===== SLURM RESOURCE USAGE ====="
-sacct -j $SLURM_JOBID \
-    --format= JobID,\  # job id
-    JobName,\  # job name
-    Partition,\  # Partition during Job run
-    State,\      # Completed; Failed; Out of Memory; Timeout; Cancelled
-    Elapsed,\  # Real Run time
-    TotalCPU,\  # Number of allocated CPUs
-    MaxRSS,\  # Peak real RAM used (number used to adjust mem request)
-    AveRSS\  # Average memory used over time
+### Meaning of each collum in the report (more can be added looking into the manual of sacct command)
+#    --format= JobID,\  # job id
+#    JobName,\  # job name
+#    Partition,\  # Partition during Job run
+#    State,\      # Completed; Failed; Out of Memory; Timeout; Cancelled
+#    Elapsed,\  # Real Run time
+#    TotalCPU,\  # Number of allocated CPUs
+#    MaxRSS,\  # Peak real RAM used (number used to adjust mem request)
+#    AveRSS\  # Average memory used over time
