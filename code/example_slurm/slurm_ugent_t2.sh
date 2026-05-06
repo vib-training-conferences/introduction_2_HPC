@@ -15,9 +15,26 @@ module purge
 # Pull minimal Docker image using Singularity
 singularity pull $DOCKER_IMG
 
-# Sleep for 60 seconds so there is time to see the job via `squeue`
-echo 'Going to sleep for 60 seconds... ZZZzzzzz....'
-sleep 60
+# Sleep for 40 seconds so there is time to see the job via `squeue`
+echo 'Going to sleep for 40 seconds... ZZZzzzzz....'
+sleep 40
 
 # Execute the hello world image. The Docker deamon will create a new container wich has an executable inside that will display text in your terminal:
 singularity run hello-world_latest.sif
+
+# Sleep 5 seconds before creating report
+sleep 5
+
+# Creating resources report
+
+Including report in output file
+echo "===== SLURM RESOURCE USAGE ====="
+sacct -j $SLURM_JOBID \
+    --format= JobID,\  # job id
+    JobName,\  # job name
+    Partition,\  # Partition during Job run
+    State,\      # Completed; Failed; Out of Memory; Timeout; Cancelled
+    Elapsed,\  # Real Run time
+    TotalCPU,\  # Number of allocated CPUs
+    MaxRSS,\  # Peak real RAM used (number used to adjust mem request)
+    AveRSS\  # Average memory used over time
