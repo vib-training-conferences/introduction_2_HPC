@@ -1,7 +1,9 @@
 #!/bin/bash
-#SBATCH --job-name=NEW_job_hello-world
+#SBATCH --job-name=-NEWreport
 #SBATCH --partition=donphan
-#SBATCH --mem=8G
+#SBATCH --mem=4G
+## SBATCH --mail-user=bruna.piereckmoura@vib.be
+## SBATCH --mail-type=end #### NONE, BEGIN, END, FAIL, REQUEUE, ALL
 #SBATCH -e "slurm_%x_%j.error"  ## %x takes job name; %j takes job ID
 #SBATCH -o "slurm_%x_%j.out"
 #SBATCH --time=00:05:00
@@ -26,15 +28,5 @@ singularity run hello-world_latest.sif
 sleep 5
 
 # Creating resources report
-
-Including report in output file
-echo "===== SLURM RESOURCE USAGE ====="
-sacct -j $SLURM_JOBID \
-    --format= JobID,\  # job id
-    JobName,\  # job name
-    Partition,\  # Partition during Job run
-    State,\      # Completed; Failed; Out of Memory; Timeout; Cancelled
-    Elapsed,\  # Real Run time
-    TotalCPU,\  # Number of allocated CPUs
-    MaxRSS,\  # Peak real RAM used (number used to adjust mem request)
-    AveRSS\  # Average memory used over time
+echo "=== Report resources usage ==="
+sacct -j $SLURM_JOBID  --format=jobid,partition,elapsed,state,totalcpu,maxrss,averss
