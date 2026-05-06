@@ -1,5 +1,7 @@
 #!/bin/bash
-#SBATCH --job-name=-NEWreport
+#SBATCH --job-name=My_job
+## SBATCH --mail-user= your@email.com
+## SBATCH --mail-type=end #### NONE, BEGIN, END, FAIL, REQUEUE, ALL
 #SBATCH --partition=donphan
 #SBATCH --mem=4G
 ## SBATCH --mail-user=bruna.piereckmoura@vib.be
@@ -30,3 +32,13 @@ sleep 5
 # Creating resources report
 echo "=== Report resources usage ==="
 sacct -j $SLURM_JOBID  --format=jobid,partition,elapsed,state,totalcpu,maxrss,averss
+
+### Meaning of each collum in the report (more can be added looking into the manual of sacct command)
+#    --format= JobID,\  # job id
+#    JobName,\  # job name
+#    Partition,\  # Partition during Job run
+#    State,\      # Completed; Failed; Out of Memory; Timeout; Cancelled
+#    Elapsed,\  # Real Run time
+#    TotalCPU,\  # Number of allocated CPUs
+#    MaxRSS,\  # Peak real RAM used (number used to adjust mem request)
+#    AveRSS\  # Average memory used over time
