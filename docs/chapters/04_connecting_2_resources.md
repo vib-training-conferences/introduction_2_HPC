@@ -149,7 +149,7 @@ ssh-rsa AA...........................
 
 You will see something like this. Starting with ssh-rsa followed by several characters that were **replaced** by points, and the name of your computer. If you see in the first line `--BEGIN OPENSSH PRIVATE KEY--`, go back! This file data should **NOT** be shared. 
 
-if you want more details check the [VSC documetation](https://docs.vscentrum.be/access/generating_keys_with_openssh.html#generating-keys-linux)
+if you want more details check the [VSC documentation](https://docs.vscentrum.be/access/generating_keys_with_openssh.html#generating-keys-linux)
 
 ## Share the SSH public key 
 

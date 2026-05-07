@@ -82,7 +82,7 @@ It means that the files and storage systems in place **will vary**. Knowing this
 Generally is good to keep in mind that when you connect to the HPC, the area you start at is like the hall of a house, you should not keep too many things there or do tasks in this location. You will also have a long-term storage, where you can keep your data, but also not where your tasks will be done. Last you will have a temporary large storage place that can be access when using your tasks
 
 
-<!-- style="color: #7CA1CC;" --> \** Storage space for a group of users (Virtual Organisation or VO for short) in VSC can be increased significantly on request, check for [more information](https://docs.vscentrum.be/gent/tier1_hortense.html#system-specific-aspects) if you need.
+<!-- style="color: #7CA1CC;" --> \** Storage space for a group of users (Virtual Organization or VO for short) in VSC can be increased significantly on request, check for [more information](https://docs.vscentrum.be/gent/tier1_hortense.html#system-specific-aspects) if you need.
 
 
 ### VIB Data Core Compute Cluster 
@@ -146,7 +146,7 @@ Filesystems specifics
 | $VSC_DATA | Long-term storage of large data files | 1.8 PB | 25GB (fixed) | 250GB |
 | $VSC_SCRATCH | Temporary fast storage of ‘live’ data for calculations | 1.9 PB | 25GB (fixed) | 250GB |
 | $VSC\_SCRATCH\_ARCANINE | Temporary very fast storage of ‘live’ data for calculations (recommended for very I/O-intensive jobs) | 70 TB  | (none) | upon request |
-(*) Storage space for a group of users (Virtual Organisation or VO for short) can be increased significantly on request.
+(*) Storage space for a group of users (Virtual Organization or VO for short) can be increased significantly on request.
 
 Source : https://docs.vscentrum.be/en/latest/gent/tier2_hardware.html?highlight=VSC_DATA#shared-storage
 

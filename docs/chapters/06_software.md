@@ -166,7 +166,7 @@ export PATH="${VSC_DATA}/miniconda3/bin:${PATH}"
 ```
 
 ## Install mambaforge
-mamba is a reimplementation of the conda package manager in C++.
+Mamba is a reimplementation of the Conda package manager in C++.
 It allows parallel downloading of repository data and package files using multi-threading and use libsolv for much faster dependency solving
 ```bash
 cd $VSC_DATA 
