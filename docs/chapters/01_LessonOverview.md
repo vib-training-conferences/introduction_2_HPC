@@ -119,7 +119,7 @@ Please cite as:
 
 > Session under development
 
-  1. ....
+  Please check citation file (to be updated soon with DOI)
 
 ## Schedule
 
