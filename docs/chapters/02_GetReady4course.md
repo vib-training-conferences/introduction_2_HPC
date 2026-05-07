@@ -58,7 +58,7 @@ Request access to one of the two HPC options in preparation of the course since 
 #### a. Register for an [HPC account](https://docs.vscentrum.be/access/vsc_account.html) 
 
 >
-> P.s.: If you are from industry or in any other situation where you are not linked to an academic institution we can only help you get an account when registered in the workshop, check avaiability in [the website](https://www.vibtrainingandconferences.be/#/).
+> P.s.: If you are from industry or in any other situation where you are not linked to an academic institution we can only help you get an account when registered in the workshop, check availability in [the website](https://www.vibtrainingandconferences.be/#/).
 >
 > In that case the trainer needs to request a temporary account for you to participate in the training activities.
 >
@@ -93,7 +93,7 @@ All good, you can get started!
 
 ### VIB Data Core Compute Cluster
 
-Researchers from VIB (and therefor have a `@vib` email address) can follow this course using the VIB Data Core Compute Cluster. 
+Researchers from VIB (and therefore have a `@vib` email address) can follow this course using the VIB Data Core Compute Cluster. 
 
 
 #### a. Request an account 

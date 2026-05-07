@@ -46,7 +46,7 @@ Authentication
 
 1. Browse to the [Globus](https://www.globus.org/) website.
 2. Go to Log in (right upper corner)
-3. Select your organisation e.g. KU Leuven association/ UGent/ UAntwerp /VIB and click on Continue
+3. Select your organization e.g. KU Leuven association/ UGent/ UAntwerp /VIB and click on Continue
 4. Follow KU Leuven login procedure via the KU Leuven Authenticator e.g. Scan QR
 5. Accept Information to be Provided to Service (always or one time only) and click on Accept
 6. Globus App File Manager will be displayed in the browser tab.
@@ -106,7 +106,7 @@ These folders are accessible via the File Manager in the Bioimage ANalysis Deskt
 - `VSC KU Leuven tier2 scratch (Tier-2 KUL)`: /scratch/xxx/vscxxxyy
 - `VSC UGENT Tier2 filesystem (Tier-2 UGent)`: /scratch/gent
 - `KU Leuven L drive (LUNA)`
-- `KU Leuven Onedrive`
+- `KU Leuven OneDrive`
 - `VIB shared files`
 - `EMPIAR`
 - `BioImage archive`

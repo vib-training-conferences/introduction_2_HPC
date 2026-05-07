@@ -48,7 +48,7 @@ orcid:    [@0](@1)<!--class="orcid-logo-for-author-list"
 
 # Introduction to HPC
 
-> This material is inspired and using extracs from [**"HCP Training Bio-imaging"**](https://github.com/vib-bic-training/HPC_training_bioimaging_1), by Benjamin Pavie and Tatiana Woller. Use was authorized.
+> This material is inspired and uses excerpts from [**"HCP Training Bio-imaging"**](https://github.com/vib-bic-training/HPC_training_bioimaging_1), by Benjamin Pavie and Tatiana Woller. Use was authorized.
 
 >This material in under active development at the moment.
 
@@ -74,7 +74,7 @@ The **presentation** which goes alongside this material can be found [here](http
 Half day Schedule:
 
 - 13:00 - 13:30 - Introduction
-- 13:30 - 15:00 - Accessing in the terminal and OnDemand
+- 13:30 - 15:00  -Access through terminal and browser
 - 15:00 - 15:15 - Coffee Break
 - 15:15 - 16:00 - Interactive sessions (debug and testing)
 - 16:00 - 16:30 - Querying and using modules in the HPC
@@ -86,7 +86,7 @@ Half day Schedule:
 
 > <i class="fa fa-lock"></i> **License:** [Creative Commons Attribution share alike 4.0 International  License](https://creativecommons.org/licenses/by-sa/4.0/deed.en)
 >
-> <i class="fa fa-user"></i> **Target Audience:** Researchers, Technitians, trainers, anyone with interest in using HPC
+> <i class="fa fa-user"></i> **Target Audience:** Researchers, Technicians, trainers, anyone with interest in using HPC
 >
 > <svg xmlns="http://www.w3.org/2000/svg" height="14" width="16" viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M384 64c0-17.7 14.3-32 32-32H544c17.7 0 32 14.3 32 32s-14.3 32-32 32H448v96c0 17.7-14.3 32-32 32H320v96c0 17.7-14.3 32-32 32H192v96c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32h96V320c0-17.7 14.3-32 32-32h96V192c0-17.7 14.3-32 32-32h96V64z"/></svg> **Level:** Beginner  
 >

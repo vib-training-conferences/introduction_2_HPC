@@ -126,7 +126,7 @@ Please cite as:
 Half day Schedule:
 
 - 13:00 - 13:30 - Introduction
-- 13:30 - 15:00 - Accessing in the terminal and OnDemand
+- 13:30 - 15:00 - Access through terminal and browser
 - 15:00 - 15:15 - Coffee Break
 - 15:15 - 16:00 - Interactive sessions (debug and testing)
 - 16:00 - 16:30 - Querying and using modules in the HPC
