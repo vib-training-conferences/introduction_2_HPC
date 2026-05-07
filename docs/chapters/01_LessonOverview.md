@@ -113,6 +113,12 @@ link:     https://raw.githubusercontent.com/vibbits/material-liascript/master/vi
 
 Part of this training was reused from the ["HPC training Bio-imaging"](https://liascript.github.io/course/?https://raw.githubusercontent.com/vib-bic-training/HPC_training_bioimaging_1/refs/heads/main/README.md#1)
 
+| |
+|---|
+| [![ORCID](https://raw.githubusercontent.com/vibbits/rdm-introductory-course/main/images/logos/32px-ORCID_iD.svg.png)](https://orcid.org/0009-0002-2539-116X)Boris Depoortere |
+|   |
+
+
 ### Citing this lesson
 
 Please cite as:
