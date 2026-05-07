@@ -85,7 +85,7 @@ link:     https://raw.githubusercontent.com/vibbits/material-liascript/master/vi
 >
 > <i class="fa fa-hourglass"></i> **Time estimation General session**: 1/2 day 
 >
-> <i c
+>
 <i class="fa fa-lock"></i> **License:** 
 
 <img src="https://raw.githubusercontent.com/vibbits/rdm-course-2022/main/images/logos/CC-by.png" title="" alt="" width="143">
