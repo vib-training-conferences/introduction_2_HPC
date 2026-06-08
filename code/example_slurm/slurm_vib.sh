@@ -3,6 +3,7 @@
 #SBATCH --partition=debug_28C_56T_750GB
 #SBATCH --mem=8G
 #SBATCH --time=00:05:00
+#SBATCH --account=<slurm_account>
 
 # Define variables
 DOCKER_IMG="docker://hello-world"
