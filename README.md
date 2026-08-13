@@ -46,7 +46,7 @@ edition:  2nd
 orcid:    [@0](@1)<!--class="orcid-logo-for-author-list"
 -->
 
-# Introduction to HPC
+# High Performance Computing: structure and practice
 
 Lesson overview
 -----------------
@@ -114,7 +114,7 @@ Lesson overview
 >
 > <i class="fa fa-money-bill"></i> **Funding:** This project has received funding from VIB.
 >
-> <i class="fa fa-anchor"></i> **PURL**:  <span style="color:red">not yet available</span>
+> <i class="fa fa-anchor"></i> **PURL**:  [<img src="https://zenodo.org/badge/DOI/10.5281/zenodo.21919181.svg" width="50"/>](https://zenodo.org/records/21919181)
 >
 > # Authors and Contributors
 >
@@ -134,7 +134,7 @@ Lesson overview
 >
 > Please cite as:
 >
-> <span style="color:red">to be updated soon</span>
+> Piereck Moura, B., Mathys, J.& Depoortere, B. (2026). High Performance Computing: structure and practice essentials (Version V2026.05.07) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.21919181
 >
 > # Chapters List
 > 
