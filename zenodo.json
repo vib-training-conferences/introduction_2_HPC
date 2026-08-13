@@ -1,6 +1,6 @@
 {
   "title": "High Performance Computing: structure and practice essentials",
-  "version": "v2026.10",
+  "version": "v2026.05.07",
   "license": "CC-BY",
   "upload_type": "lesson",
   "description": "<p>In this course you will learn about the structure of the HPC (tiers), what resources you have available, and most importantly, how to use and navigate the HPC. We focus on the VSC (Vlaams Supercomputer Centrum) instances and VIB Data Core cluster computer. Most of them use Slurm what could be used similarly in other HPCs. Our goal is to help you easily adapt to any HPC system you encounter in your professional life.<\/p>",
@@ -31,7 +31,7 @@
       "name": "Mathys, Janick",
       "affiliation": "VIB",
       "orcid": "00009-0007-1722-2370",
-      "type": "contactperson"
+      "type": "relatedperson"
     },
     {
       "name": "Boris Depoortere",
