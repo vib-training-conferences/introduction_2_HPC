@@ -48,41 +48,8 @@ orcid:    [@0](@1)<!--class="orcid-logo-for-author-list"
 
 # Introduction to HPC
 
-> This material is inspired and uses excerpts from [**"HCP Training Bio-imaging"**](https://github.com/vib-bic-training/HPC_training_bioimaging_1), by Benjamin Pavie and Tatiana Woller. Use was authorized.
-
->This material in under active development at the moment.
-
-<section>
-
-> We are using the interactive Open Educational Resource online/offline course infrastructure called LiaScript.
-> It is a distributed way of creating and sharing educational content hosted on github.
-> To see this document as an interactive LiaScript rendered version, click on the
-> following link/badge: [LiaScript](https://liascript.github.io/course/)
-
-## General context
-
-Welcome to our **Introduction to HPC** VIB workshop! We are very happy to have you here.
-
-This is the 2nd edition of this workshop
-
-The half day session aims to introduce the different options available withing the Flemish system, while enabling students to quickly adapt to any HPC system they might access around the globe. With some best practices and differences and similarities within each system.
-
-The **presentation** which goes alongside this material can be found [here](https://docs.google.com/presentation/d/1J6qROZ35JVeKpVx8TAjWNtbsjescx95ZtqbBCV8vYrg/edit?usp=sharing).
-
-## Proposed Schedule
-
-Half day Schedule:
-
-- 13:00 - 13:30 - Introduction
-- 13:30 - 15:00  -Access through terminal and browser
-- 15:00 - 15:15 - Coffee Break
-- 15:15 - 16:00 - Interactive sessions (debug and testing)
-- 16:00 - 16:30 - Querying and using modules in the HPC
-- 16:30 - 17:00 - Submitting and managing jobs
-
-</section>
-
-# Lesson overview
+Lesson overview
+-----------------
 
 > <i class="fa fa-lock"></i> **License:** [Creative Commons Attribution share alike 4.0 International  License](https://creativecommons.org/licenses/by-sa/4.0/deed.en)
 >
@@ -91,101 +58,136 @@ Half day Schedule:
 > <svg xmlns="http://www.w3.org/2000/svg" height="14" width="16" viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M384 64c0-17.7 14.3-32 32-32H544c17.7 0 32 14.3 32 32s-14.3 32-32 32H448v96c0 17.7-14.3 32-32 32H320v96c0 17.7-14.3 32-32 32H192v96c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32h96V320c0-17.7 14.3-32 32-32h96V192c0-17.7 14.3-32 32-32h96V64z"/></svg> **Level:** Beginner  
 >
 > <i class="fa fa-arrow-left"></i> **Prerequisites**  
-> To be able to follow this course, learners should have knowledge in:
+> To be able to follow this course, learners should:
 > 
-> 1. Basic of command line  
+> Have basic command-line skills. 
+>
+> If you lack command-line experience, you can prepare by following this [e-learning or Linux introduction](https://www.vibtrainingandconferences.be/events?f%5B0%5D=status%3Aupcoming&text=linux).
 >
 > <i class="fa fa-bookmark"></i> **Description**  
-
-> In this half-day introduction, you will have the opportunity to know a bit more about the structure of the HPC (tiers), what resources you have available, and most importantly, how to use and navigate the HPC. 
 >
-> In this course, you will learn the differences and similarities between
+> Large-scale data analysis and complex computations often exceed the limits of standard computing resources. This half-day course provides researchers and professionals with essential knowledge to confidently work with High Performance Computing (HPC) environments. 
 >
-> - VSC (Vlaams Supercomputer Centrum) instances in Gent and Leuven
->
-> - VIB Data Core
->
-> - And a glimpse of what you could find beyond.
->
-> It is our aim that you can more easily adjust to any HPC system that you encounter in your professional life.
+> During the session, you will explore the structure of HPC systems, understand available resources, and learn practical techniques for navigating and using these environments effectively. The course highlights the differences and similarities among the VSC instances in Ghent and Leuven and the VIB Data Core. 
 > 
+>The **presentation** which goes alongside this material can be found [here](https://docs.google.com/presentation/d/1J6qROZ35JVeKpVx8TAjWNtbsjescx95ZtqbBCV8vYrg/edit?usp=sharing).
+>
 > <i class="fa fa-arrow-right"></i> **Learning Outcomes:**  
 > By the end of the course, learners will be able to:
 >
-> 1. Describe differences and similarities among HPC Tiers and usage
+> 1. Identify differences and similarities among different HPC instances
+> 2. Access existing HPC infrastructures in Flanders, including VSC and VIB Data Core
+> 3. Navigate and use different HPC environments (storage, analysis, and debug)
+> 4. Query and manage specific modules on the HPC
+> 5. Submit jobs to run software and scripts on the compute cluster
+> 6. Monitor and check information about submitted jobs
 >
-> 2. Access existing HPC infrastructures in Flanders, such as VSC and VIB Data Core
+> <i class="fa fa-hourglass"></i> **Time estimation**: 4.5 hours (1/2 day)
 >
-> 3. Use the different environments in the HPC (storage, analysis, and debug)
->
-> 4. Querying and using modules and their versions in the HPC
->
-> 5. Submit jobs to use software and scripts on the cluster
->
-> 6. Check information about submitted jobs
->
-> <i class="fa fa-hourglass"></i> **Time estimation**: 4 hours
->
-> <i class="fa fa-asterisk"></i> **Requirements:** The (technical) installation requirements are described in [Chapter 2](./chapters/02_GetReady4course.md)
+> <i class="fa fa-asterisk"></i> **Requirements:** The (technical) installation requirements are described in the chapter [Get ready](./docs/chapters/01_GetReady4course.md)
 >
 > <i class="fa fa-envelope-open-text"></i> **Supporting Materials**:
 > 
-> - How to connect to the Open On Demand interface:  https://tier.hpc.ugent.be 
+> 1. Presentatio
+> 2. Extra info about HPC in Flanders and data transfer
 >
-> - How to install Globus for windows: : https://docs.globus.org/globus-connect-personal/install/windows/
+> - How to connect to the Open On Demand interface of Tier2 UGent: https://tier.hpc.ugent.be 
 >
-> - Documentation VSC: https://docs.vscentrum.be
+> - How to install Globus for Data transfer on Windows: https://docs.globus.org/globus-connect-personal/install/windows/
+>
+> - Documentation VSC (***Vlaams Supercomputer Centrum***): https://docs.vscentrum.be
 > 
+> ## Proposed Schedule
+>
+> - 13:00 - 13:30 - Introduction
+> - 13:30 - 15:00  -Access through terminal and browser
+> - 15:00 - 15:15 - Coffee Break
+> - 15:15 - 16:00 - Interactive sessions (debug and testing)
+> - 16:00 - 16:30 - Querying and using modules in the HPC
+> - 16:30 - 17:00 - Submitting and managing jobs
+
+</section>
 > <i class="fa fa-life-ring"></i> **Acknowledgement**:
 >
 > * [VIB Data Core](https://datacore.sites.vib.be/en)
 > * [VIB Bioimaging Core Leuven](https://bioimagingcore-leuven.sites.vib.be/en)
 >
-> <i class="fa fa-money-bill"></i> **Funding:** 
+> <i class="fa fa-money-bill"></i> **Funding:** This project has received funding from VIB.
 >
-> <i class="fa fa-anchor"></i> **PURL**:  
+> <i class="fa fa-anchor"></i> **PURL**:  <span style="color:red">not yet available</span>
+>
+> # Authors and Contributors
+>
+> Authors
+>
+>[<img src="https://raw.githubusercontent.com/vib-training-conferences/training_material_template/refs/heads/main/docs/images/ORCID-iD_icon_vector.svg" width="20"/>](https://orcid.org/0000-0001-6691-4233) Bruna Piereck
+>
+>[<img src="https://raw.githubusercontent.com/vib-training-conferences/training_material_template/refs/heads/main/docs/images/ORCID-iD_icon_vector.svg" width="20"/>](https://orcid.org/0009-0007-1722-2370)  Janick Mathys
+>
+> Contributors
+>
+>[<img src="https://raw.githubusercontent.com/vib-training-conferences/training_material_template/refs/heads/main/docs/images/ORCID-iD_icon_vector.svg" width="20"/>](https://orcid.org/0009-0002-2539-116X)  Boris Depoortere
+>
+>**We welcome contributors for these materials**
+>
+> ## Citing this lesson
+>
+> Please cite as:
+>
+> <span style="color:red">to be updated soon</span>
+>
+> # Chapters List
+> 
+> | Chapter | Title |
+> | :---    | :---  |
+> |1        |[Get ready for the course, instalation and accounts](./docs/chapters/01_GetReady4course.md)|
+> |2        |[HPC Infrastructure](./docs/chapters/03_Infrastructure.md|
+> |3        |[Connecting to HPCs](./docs/chapters/03_connecting_2_resources.md)|
+> |4        |[VIB Data Core Compute](./docs/chapters/04_vib_compute.md)|
+> |5        |[Transferring Data](./docs/chapters/05_data_transfer.md)|
+> |6        |[Software on HPCs](./docs/chapters/06_software.md)|
+> |7        |[Jupyter Notebooks](./docs/chapters/07_jupyter_notebook.md)|
 
+# Workshop and Material organization
 
-# Authors and Contributors
+> We are using the interactive Open Educational Resource online/offline course infrastructure called LiaScript.
+> It is a distributed way of creating and sharing educational content hosted on github.
+> To see this document as an interactive LiaScript rendered version, click on the
+> following link/badge: [LiaScript](https://liascript.github.io/course/)
 
-Authors
+# References
 
-- [Bruna Piereck](@[orcid](https://orcid.org/0000-0001-6691-4233))
-- [Janick Mathys](@[orcid](https://orcid.org/0009-0007-1722-2370))
+* This material is inspired and uses excerpts from [**"HCP Training Bio-imaging"**](https://github.com/vib-bic-training/HPC_training_bioimaging_1), by Benjamin Pavie and Tatiana Woller. Use was authorized.
 
-Contributors
+* We use information available in the [VSC (***Vlaams Supercomputer Centrum***) Documentation](https://docs.vscentrum.be)
 
-- [Boris Depoortere](@[orcid](https://orcid.org/0009-0002-2539-116X))
+* We also use information availabl only for VIB personel in the [VIB Data Core documentation](https://docs.datacore.vib.be/)
 
-## Citing this lesson
+# About us
 
-Please cite as:
+*About ELIXIR Training Platform*
 
-  1. ...
+The ELIXIR Training Platform was established to develop a training community that spans all ELIXIR member states (see the list of Training Coordinators). It aims to strengthen national training programmes, grow bioinformatics training capacity and competence across Europe, and empower researchers to use ELIXIR's services and tools.
 
-# Chapters List
+One service offered by the Training Platform is TeSS, the training registry for the ELIXIR community. Together with ELIXIR France and ELIXIR Slovenia, VIB as lead node for ELIXIR Belgium is engaged in consolidating quality and impact of the TeSS training resources (2022-23) (https://elixir-europe.org/internal-projects/commissioned-services/2022-trp3).
 
-Material for the HPC training.
+The Training eSupport System was developed to help trainees, trainers and their institutions to have a one-stop shop where they can share and find information about training and events, including training material. This way we can create a catalogue that can be shared within the community. How it works is what we are going to find out in this course.
 
-## [Lesson Overview](chapters/01_LessonOverview.md)
+*About VIB and VIB Technologies*
 
-[preview-lia](https://raw.githubusercontent.com/vib-tcp/introduction_2_HPC/refs/heads/main/chapters/01_LessonOverview.md)
+VIB is an entrepreneurial non-profit research institute, with a clear focus on groundbreaking strategic basic research in life sciences and operates in close partnership with the five universities in Flanders – Ghent University, KU Leuven, University of Antwerp, Vrije Universiteit Brussel and Hasselt University.
 
-## [Course preparation](chapters/02_GetReady4course.md)
+As part of the VIB Technologies, the 12 VIB Core Facilities, provide support in a wide array of research fields and housing specialized scientific equipment for each discipline. Science and technology go hand in hand. New technologies advance science and often accelerate breakthroughs in scientific research. VIB has a visionary approach to science and technology, founded on its ability to identify and foster new innovations in life sciences.
 
-## [HPC Infrastructure](chapters/03_Infrastructure.md)
+The goal of VIB Technology Training is to up-skill life scientists to excel in the domains of VIB Technologies, Bioinformatics & AI, Software Development, and Research Data Management.
 
-## [Connecting to HPCs](chapters/04_connecting_2_resources.md)
+--------------------------------------------
 
-## [Transferring Data](chapters/05_data_transfer.md)
+*Editorial team for this course*
 
-## [Software on HPCs](chapters/06_software.md)
+Authors: @[orcid(Alexander Botzki)](https://orcid.org/0000-0001-6691-4233), @[orcid(Bruna Piereck)](https://orcid.org/0000-0001-5958-0669)
 
-## [Jupyter Notebooks](chapters/07_jupyter_notebook.md)
-
-## [VIB Data Core Compute](chapters/vib_compute.md)
-
-
+Technical Editors: Alexander Botzki
 
 ```json   @JSONLD
 {
