@@ -88,25 +88,25 @@ Lesson overview
 >
 > <i class="fa fa-envelope-open-text"></i> **Supporting Materials**:
 > 
-> 1. Presentatio
+> 1. [Presentation](./docs/presentations/)
+>
 > 2. Extra info about HPC in Flanders and data transfer
 >
-> - How to connect to the Open On Demand interface of Tier2 UGent: https://tier.hpc.ugent.be 
+>    * How to connect to the Open On Demand interface of Tier2 UGent: https://tier.hpc.ugent.be 
 >
-> - How to install Globus for Data transfer on Windows: https://docs.globus.org/globus-connect-personal/install/windows/
+>    * How to install Globus for Data transfer on Windows: https://docs.globus.org/globus-connect-personal/install/windows/
 >
-> - Documentation VSC (***Vlaams Supercomputer Centrum***): https://docs.vscentrum.be
+>    * Documentation VSC (***Vlaams Supercomputer Centrum***): https://docs.vscentrum.be
 > 
 > ## Proposed Schedule
 >
-> - 13:00 - 13:30 - Introduction
-> - 13:30 - 15:00  -Access through terminal and browser
-> - 15:00 - 15:15 - Coffee Break
-> - 15:15 - 16:00 - Interactive sessions (debug and testing)
-> - 16:00 - 16:30 - Querying and using modules in the HPC
-> - 16:30 - 17:00 - Submitting and managing jobs
-
-</section>
+>> - 13:00 - 13:30 - Introduction
+>> - 13:30 - 15:00  -Access through terminal and browser
+>> - 15:00 - 15:15 - Coffee Break
+>> - 15:15 - 16:00 - Interactive sessions (debug and testing)
+>> - 16:00 - 16:30 - Querying and using modules in the HPC
+>> - 16:30 - 17:00 - Submitting and managing jobs
+>
 > <i class="fa fa-life-ring"></i> **Acknowledgement**:
 >
 > * [VIB Data Core](https://datacore.sites.vib.be/en)
@@ -141,7 +141,7 @@ Lesson overview
 > | Chapter | Title |
 > | :---    | :---  |
 > |1        |[Get ready for the course, instalation and accounts](./docs/chapters/01_GetReady4course.md)|
-> |2        |[HPC Infrastructure](./docs/chapters/03_Infrastructure.md|
+> |2        |[HPC Infrastructure](./docs/chapters/03_Infrastructure.md)|
 > |3        |[Connecting to HPCs](./docs/chapters/03_connecting_2_resources.md)|
 > |4        |[VIB Data Core Compute](./docs/chapters/04_vib_compute.md)|
 > |5        |[Transferring Data](./docs/chapters/05_data_transfer.md)|
