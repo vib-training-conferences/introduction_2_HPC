@@ -3,6 +3,8 @@
 #SBATCH --partition=debug_28C_56T_750GB
 #SBATCH --mem=8G
 #SBATCH --time=00:05:00
+#SBATCH --account=<slurm_account>
+# Read how you can find your Slurm account in the Data Core docs: https://docs.datacore.vib.be/compute-cluster/job-scheduling/#find-your-slurm-account
 
 # Define variables
 DOCKER_IMG="docker://hello-world"
