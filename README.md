@@ -141,7 +141,7 @@ Lesson overview
 > | Chapter | Title |
 > | :---    | :---  |
 > |1        |[Get ready for the course, instalation and accounts](./docs/chapters/01_GetReady4course.md)|
-> |2        |[HPC Infrastructure](./docs/chapters/03_Infrastructure.md)|
+> |2        |[HPC Infrastructure](./docs/chapters/02_Infrastructure.md)|
 > |3        |[Connecting to HPCs](./docs/chapters/03_connecting_2_resources.md)|
 > |4        |[VIB Data Core Compute](./docs/chapters/04_vib_compute.md)|
 > |5        |[Transferring Data](./docs/chapters/05_data_transfer.md)|
@@ -152,8 +152,20 @@ Lesson overview
 
 > We are using the interactive Open Educational Resource online/offline course infrastructure called LiaScript.
 > It is a distributed way of creating and sharing educational content hosted on github.
-> To see this document as an interactive LiaScript rendered version, click on the
-> following link/badge: [LiaScript](https://liascript.github.io/course/)
+> To see this material as an interactive LiaScript rendered version, with all chapters
+> in the sidebar, click on the following link/badge:
+>
+> [![LiaScript](https://raw.githubusercontent.com/LiaScript/LiaScript/master/badges/course.svg)](https://liascript.github.io/course/?https://raw.githubusercontent.com/vib-training-conferences/introduction_2_HPC/main/course.md)
+>
+> LiaScript builds its chapter sidebar from the headings of a single document, and its
+> `import:` directive only shares header definitions rather than content. The course is
+> therefore assembled into [`course.md`](./course.md) by
+> [`.github/scripts/build_course.py`](./.github/scripts/build_course.py), which runs
+> automatically on every push to `main`.
+>
+> **Edit `README.md` and the files in `docs/chapters/`; never edit `course.md` by hand.**
+> A chapter becomes part of the course by being listed in the Chapters List table above.
+> To rebuild locally, run `python3 .github/scripts/build_course.py`.
 
 # References
 
@@ -207,7 +219,7 @@ Technical Editors: Alexander Botzki
   "teaches": [
     "How to request and connect to the HPC",
     "How to allocate resources and send Jobs to the queue",
-    "How to manage and debug Jobs"
+    "How to manage and debug Jobs",
     "Best practices in the HPC"
   ],
   "audience": "Anyone with interest in using HPC for data analysis",
