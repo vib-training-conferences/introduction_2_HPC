@@ -1,0 +1,47 @@
+name: Build LiaScript course
+
+# LiaScript renders one document and builds its chapter sidebar from that document's
+# headings, so README.md and docs/chapters/*.md are concatenated into course.md, which
+# is what the LiaScript badge in the README points at.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - README.md
+      - docs/chapters/**
+      - .github/scripts/build_course.py
+      - .github/workflows/build-course.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-course-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Assemble course.md
+        run: python3 .github/scripts/build_course.py
+
+      - name: Commit course.md if it changed
+        run: |
+          if [ -z "$(git status --porcelain -- course.md)" ]; then
+            echo "course.md is already up to date."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add course.md
+          git commit -m "Rebuild LiaScript course.md from README.md and docs/chapters"
+          git push
